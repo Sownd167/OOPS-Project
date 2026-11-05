@@ -4,9 +4,8 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class ViewTheProduct {
+   private static Scanner sc = new Scanner(System.in);
     public static void viewProduct(Map<Integer, Productdetails> invobject){
-        Scanner sc = new Scanner(System.in);
-
         viewLoop:
         while(true){
             System.out.println("----------------------------------");
@@ -31,7 +30,7 @@ public class ViewTheProduct {
                     viewAllProduct(invobject);
                     break;
                 case 2:
-                    viewAProduct();
+                    viewAProduct(invobject);
                     break;
                 case 3:
                     System.out.println("Exiting ...");
@@ -57,7 +56,17 @@ public class ViewTheProduct {
     }
 
     //viewAspecificProduct
-    public static void viewAProduct(){
-
+    public static void viewAProduct(Map<Integer,Productdetails> invobject){
+        System.out.print("Enter the Product id to view: ");
+        int id = sc.nextInt();
+        System.out.println("*******************************");
+        System.out.println("        THE PRODUCT DETAILS           ");
+        System.out.println("*******************************");
+        if(invobject.containsKey(id)){
+            System.out.println(invobject.get(id));
+        }
+        else{
+            System.out.println("There is no stocks present for this product id: "+ id);
+        }
     }
 }
