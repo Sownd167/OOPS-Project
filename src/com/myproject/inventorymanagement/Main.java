@@ -34,7 +34,7 @@ public class Main {
                     addProduct();
                     break;
                 case 2:
-                    System.out.println("Removing stocks");
+                    removeItems();
                     break;
                 case 3:
                     System.out.println("Updating stocks");

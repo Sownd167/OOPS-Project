@@ -45,6 +45,7 @@ public class ViewTheProduct {
     public static void viewAllProduct(Map<Integer,Productdetails> invobject){
         System.out.println("*******************************");
         System.out.println("        PRODUCT LIST           ");
+        System.out.println("*******************************");
         if(invobject.isEmpty()){
             System.out.println("No Stock Present !!");
         }
@@ -52,21 +53,26 @@ public class ViewTheProduct {
             for(Map.Entry<Integer, Productdetails> mpp : invobject.entrySet()){
                 System.out.println( "Details:\n "+ mpp.getValue());
             }
+            System.out.println("*****************************");
         }
     }
 
     //viewAspecificProduct
-    public static void viewAProduct(Map<Integer,Productdetails> invobject){
-        System.out.print("Enter the Product id to view: ");
-        int id = sc.nextInt();
-        System.out.println("*******************************");
-        System.out.println("        THE PRODUCT DETAILS           ");
-        System.out.println("*******************************");
-        if(invobject.containsKey(id)){
-            System.out.println(invobject.get(id));
+    public static void viewAProduct(Map<Integer,Productdetails> invobject) {
+        if (invobject.isEmpty()) {
+            System.out.println("No Stock Present !!");
         }
-        else{
-            System.out.println("There is no stocks present for this product id: "+ id);
+        else {
+            System.out.print("Enter the Product id to view: ");
+            int id = sc.nextInt();
+            System.out.println("*******************************");
+            System.out.println("        THE PRODUCT DETAILS           ");
+            System.out.println("*******************************");
+            if (invobject.containsKey(id)) {
+                System.out.println(invobject.get(id));
+            } else {
+                System.out.println("There is no stocks present for this product id: " + id);
+            }
         }
     }
 }
