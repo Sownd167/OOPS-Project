@@ -11,4 +11,4 @@ Language used: JAVA
 * ProductStorage.java -> A class which creates the HashMap object and it calls the respective classes to do the operations.
 * AddingNewProduct.java -> A class to add the new stocks to the HashMap object it will get the product details using command line and will create the object using Productdetails.java
 * ViewTheProduct.java -> A class which helps to view either all the stocks or a specific stock as per user's input.
-*  
+* RemoveTheStock.java -> A class which helps to remove either a single product or completely removes all the items from the inventory as per user's input.
