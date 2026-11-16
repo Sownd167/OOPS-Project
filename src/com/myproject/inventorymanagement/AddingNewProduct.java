@@ -45,7 +45,7 @@ public class AddingNewProduct {
                 String dateString = sc.nextLine();
                 expiration_date = dateparse(dateString);
             } catch (DateTimeParseException e) {
-                 System.out.println(expiration_date);
+                 System.out.println("Please enter a valid date");
             }
     }
 

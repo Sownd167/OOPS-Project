@@ -6,6 +6,7 @@ import java.util.Map;
 
 import static com.myproject.inventorymanagement.ViewTheProduct.*;
 import static com.myproject.inventorymanagement.RemoveTheStock.*;
+import static com.myproject.inventorymanagement.UpdateTheStock.*;
 
 public class ProductStorage {
       /*creating a HASHMAP (key-value) pair
@@ -30,6 +31,10 @@ public class ProductStorage {
     //remove the stock
     public static void removeItems(){
         removeStock(inventory);
+    }
+    //update the stock
+    public static void updateItems(){
+        updateStock(inventory);
     }
 }
 

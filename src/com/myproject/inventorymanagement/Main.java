@@ -37,7 +37,7 @@ public class Main {
                     removeItems();
                     break;
                 case 3:
-                    System.out.println("Updating stocks");
+                    updateItems();
                     break;
                 case 4:
                     viewItems();
