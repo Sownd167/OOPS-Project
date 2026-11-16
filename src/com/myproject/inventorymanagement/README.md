@@ -12,3 +12,6 @@ Language used: JAVA
 * AddingNewProduct.java -> A class to add the new stocks to the HashMap object it will get the product details using command line and will create the object using Productdetails.java
 * ViewTheProduct.java -> A class which helps to view either all the stocks or a specific stock as per user's input.
 * RemoveTheStock.java -> A class which helps to remove either a single product or completely removes all the items from the inventory as per user's input.
+* UpdateTheStock.java -> A class which updates each attributes of a stock.
+
+**To run this project navigate to Main.java code and click on RUN button**
